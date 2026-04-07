@@ -1,3 +1,5 @@
+# TODO: Ajustar a estrutura desse arquivo
+
 # Código da Aplicação
 
 Esta pasta contém o código do seu agente financeiro.
@@ -20,6 +22,19 @@ openai
 python-dotenv
 ```
 
+## Passo a Passo de Execução
+
+## Setup do Ollama
+
+```bash
+# 1. Instalar Ollama (ollama.com)
+# 2. Baixar um modelo leve
+
+# 3. Testar se funciona
+ollama run gpt-oss "Olá!"
+```
+
+
 ## Como Rodar
 
 ```bash
@@ -29,3 +44,20 @@ pip install -r requirements.txt
 # Rodar a aplicação
 streamlit run app.py
 ```
+
+
+```bash
+# 1. Instalar dependências
+pip install streamlit pandas requests
+
+# 2. Garantir que Ollama está rodando
+ollama serve
+
+# 3. Rodar a aplicação
+streamlit run app.py
+```
+
+## Evidências de Execução
+
+![alt text](evidencia.png)
+
