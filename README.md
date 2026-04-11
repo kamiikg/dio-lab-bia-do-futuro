@@ -28,6 +28,8 @@ A agente vai além de um simples chatbot reativo: ela **antecipa necessidades**,
 📁 dio-lab-bia-do-futuro/
 │
 ├── 📄 README.md
+├── 📄 .env.example
+├── 📄 .gitignore
 │
 ├── 📁 data/                            # Dados mockados para o agente
 │   ├── historico_atendimento.csv       # Histórico de atendimentos (CSV)
@@ -43,15 +45,12 @@ A agente vai além de um simples chatbot reativo: ela **antecipa necessidades**,
 │   └── 05-pitch.md                     # Roteiro do pitch
 │
 ├── 📁 src/                             # Código da aplicação
-│   ├── app.py                          # Aplicação principal
-│   ├── agente.py                       # Lógica do agente
-│   ├── config.py                       # Configurações (API keys, etc.)
-|   └── requirements.txt                # Dependências
+│   ├── app.py                          # Aplicação principal (Streamlit)
+│   ├── agente.py                       # Lógica do agente financeiro
+│   ├── config.py                       # Configurações e variáveis de ambiente
+|   └── requirements.txt                # Dependências do projeto
 │
 └── 📁 assets/                          # Imagens e diagramas
-│
-└── 📁 examples/                        # Referências e exemplos
-    └── README.md
 ```
 
 ---
@@ -61,8 +60,7 @@ A agente vai além de um simples chatbot reativo: ela **antecipa necessidades**,
 ### Pré-requisitos
 
 - Python 3.10+
-- Instalar [Ollama](https://ollama.com/)
-- Criar uma chave de API no Ollama
+- [Ollama](https://ollama.com/) instalado e rodando localmente
 
 ### Instalação
 
@@ -124,7 +122,7 @@ Os prompts completos e os exemplos de interação estão documentados em [`docs/
 - [x] Documentação do agente (`docs/`)
 - [x] Prompts do agente (`docs/03-prompts.md`)
 - [x] Protótipo funcional (`src/app.py`)
-- [ ] Pitch gravado
+- [x] Pitch gravado
 
 ---
 

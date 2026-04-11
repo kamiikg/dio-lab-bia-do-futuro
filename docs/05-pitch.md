@@ -1,50 +1,42 @@
-[EDITAR ARQUIVO]
-
 # Pitch (3 minutos)
-
-> [!TIP]
-> Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
  
 ## Roteiro Sugerido
 
 ### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
 
-"62% dos brasileiros não sabem o que é reserva de emergência. Muita gente quer aprender sobre finanças, mas, não sabe por onde começar - e tem medo de parecer burro perguntando."
-
-"
+Cerca de 93% dos brasileiros que pagam aluguel sonham com a casa própria, mas, somente 5% conseguem alcançar esse objetivo.
+Muita gente quer conquistar esse e outros sonhos, porém, não sabem como chegar lá.
 
 ### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
 
-"A Kami é um educador financeiro que ensina de forma personalizada. Ela usa seus próprios dados para dar exemplos préticos. Não recomenda investimentos - só educa. É como ter um professor particular de finanças disponível 24h."
+A Kami é um educadora financeira virtual que ensina de forma personalizada.
+Ela usa seus próprios dados para dar exemplos práticos, e calcula o saldo mensal e diários disponíveis.
+Assim, oferece clareza pro usuário, com recomendações personalizadas sobre como alcançar objetivos financeiros de curto, médio e longo prazo.
 
 ### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
-
-[ COmpartilhe a tela e faça 2-3 peruntas ao Edu]
-- "O que é CDI?"
-- "Onde estou gastando mais?"
-- "Me explica o que é Tesouro Selic" 
+Gravação com a agente funcionando, fazer as perguntas abaixo: 
+- Qual meu saldo restante?
+- Como poderia avançar na reserva de emergência?
+- O que é Tesouro Selic e qual a diferença para o CDB?
 
 ### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
 
-"Diferente de chatbots genéricos, o Edu usa SEUS dados como exmeplo. Isso torna o aprendizado concreto. E o mlehor: roda 100% local, sem custo e sem enviar seus dados pra ninguém."
+Diferente de chatbots genéricos, a Kami usa seus dados como exemplo, e faz recomendações de como aplicar e investir com base no seus objetivos.
+Isso traz clareza, que resulta em concretização de sonhos.
+E o melhor, roda em nuvem, sem ocupar espaço de armazenamento, e podendo escolher a LLM que quiser.
+
 ---
 
 ## Checklist do Pitch
 
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+- [x] Duração máxima de 3 minutos
+- [x] Problema claramente definido
+- [x] Solução demonstrada na prática
+- [x] Diferencial explicado
+- [x] Áudio e vídeo com boa qualidade
 
 ---
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+[Kami - Educadora Financeira Virtual](https://drive.google.com/file/d/1JQxAt4WT6ZAsVhHJo2gMSwl6Yya3s8Ov/view?usp=sharing)
