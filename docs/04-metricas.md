@@ -54,3 +54,7 @@ Após os testes, registre suas conclusões:
 
 **O que pode melhorar:**
 - Saudações e perguntas de finalização. Não soam naturais.
+
+## Evidências de Execução
+
+![alt text](../assets/evidencia.png)

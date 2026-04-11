@@ -1,149 +1,139 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🎯 Agente Financeiro Inteligente — Planejamento de Metas
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> Lab desenvolvido como parte do bootcamp **"Bia do Futuro"** da [Digital Innovation One (DIO)](https://www.dio.me/), com foco na criação de um agente financeiro baseado em IA Generativa.
 
 ---
 
-## O Que Você Deve Entregar
+## 📌 Sobre o Projeto
 
-### 1. Documentação do Agente
+Este projeto consiste no desenvolvimento de uma **agente financeira inteligente** especializada em **planejamento de metas financeiras**. A agente é capaz de analisar o perfil do usuário, seu histórico de transações e produtos financeiros disponíveis para oferecer recomendações personalizadas e proativas sobre como alcançar objetivos financeiros de curto, médio e longo prazo.
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+A agente vai além de um simples chatbot reativo: ela **antecipa necessidades**, **personaliza sugestões** com base no contexto de cada cliente e atua de forma consultiva, garantindo segurança e confiabilidade nas respostas.
 
 ---
 
-### 2. Base de Conhecimento
+## ✨ Funcionalidades
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- 🗺️ **Definição de metas financeiras** — viagem, reserva de emergência, aposentadoria, compra de imóvel, etc.
+- 📊 **Análise do perfil do investidor** — tolerância a risco, horizonte de tempo e situação atual
+- 💳 **Leitura do histórico de transações** — identificação de padrões de gastos e oportunidades de economia
+- 🏦 **Sugestão de produtos financeiros** — indicação de produtos alinhados a cada meta
+- 🔒 **Respostas seguras e confiáveis** — mecanismos anti-alucinação com grounding em dados reais
 
 ---
 
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
+## 🗂️ Estrutura do Repositório
 
 ```
-📁 lab-agente-financeiro/
+📁 dio-lab-bia-do-futuro/
 │
 ├── 📄 README.md
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── 📁 data/                            # Dados mockados para o agente
+│   ├── historico_atendimento.csv       # Histórico de atendimentos (CSV)
+│   ├── perfil_investidor.json          # Perfil e preferências do cliente (JSON)
+│   ├── produtos_financeiros.json       # Produtos e serviços disponíveis (JSON)
+│   └── transacoes.csv                  # Histórico de transações (CSV)
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── 📁 docs/                            # Documentação do projeto
+│   ├── 01-documentacao-agente.md       # Caso de uso e arquitetura
+│   ├── 02-base-conhecimento.md         # Estratégia de dados
+│   ├── 03-prompts.md                   # Engenharia de prompts
+│   ├── 04-metricas.md                  # Avaliação e métricas
+│   └── 05-pitch.md                     # Roteiro do pitch
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+├── 📁 src/                             # Código da aplicação
+│   ├── app.py                          # Aplicação principal
+│   ├── agente.py                       # Lógica do agente
+│   ├── config.py                       # Configurações (API keys, etc.)
+|   └── requirements.txt                # Dependências
 │
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
+└── 📁 assets/                          # Imagens e diagramas
 │
-└── 📁 examples/                      # Referências e exemplos
+└── 📁 examples/                        # Referências e exemplos
     └── README.md
 ```
 
 ---
 
-## Dicas Finais
+## 🚀 Como Executar
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+### Pré-requisitos
+
+- Python 3.10+
+- Instalar [Ollama](https://ollama.com/)
+- Criar uma chave de API no Ollama
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/kamiikg/dio-lab-bia-do-futuro.git
+cd dio-lab-bia-do-futuro
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Configure sua chave de API
+cp .env.example .env
+# Edite o .env com sua chave de API
+
+# Execute a aplicação
+streamlit run src/app.py
+```
+
+---
+
+## 🤖 Prompts da Agente
+
+O comportamento da agente é definido por um **system prompt** que estabelece:
+
+- A **persona** da agente: consultora financeira empática, objetiva e didática
+- As **restrições de segurança**: a agente nunca inventa dados — só responde com base nos dados fornecidos
+- Os **fluxos de conversa**: saudação → diagnóstico financeiro → definição de metas → sugestão de plano
+
+Os prompts completos e os exemplos de interação estão documentados em [`docs/03-prompts.md`](docs/03-prompts.md).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Categoria | Ferramenta |
+|---|---|
+| **LLM** | [Ollama](https://ollama.com/) |
+| **Interface** | [Streamlit](https://streamlit.io/) |
+| **Dados** | CSV / JSON (mockados) |
+| **Diagramas** | [Mermaid](https://mermaid.js.org/) |
+
+---
+
+## 📚 Documentação
+
+| Documento | Descrição |
+|---|---|
+| [`01-documentacao-agente.md`](docs/01-documentacao-agente.md) | Caso de uso, persona e arquitetura |
+| [`02-base-conhecimento.md`](docs/02-base-conhecimento.md) | Estratégia de dados e base de conhecimento |
+| [`03-prompts.md`](docs/03-prompts.md) | Engenharia de prompts e exemplos de interação |
+| [`04-metricas.md`](docs/04-metricas.md) | Avaliação de qualidade e métricas |
+| [`05-pitch.md`](docs/05-pitch.md) | Roteiro do pitch de apresentação |
+
+---
+
+## 🏆 Entregáveis do Lab
+
+- [x] Documentação do agente (`docs/`)
+- [x] Prompts do agente (`docs/03-prompts.md`)
+- [x] Protótipo funcional (`src/app.py`)
+- [ ] Pitch gravado
+
+---
+
+## 👩‍💻 Autora
+
+Desenvolvido por **[kamiikg](https://github.com/kamiikg)** como solução para o lab **"Bia do Futuro"** da [DIO](https://www.dio.me/).
+
+---
+
+## 📄 Licença
+
+Este projeto é baseado no repositório original da [Digital Innovation One](https://github.com/digitalinnovationone/dio-lab-bia-do-futuro) e está disponível para fins educacionais.
